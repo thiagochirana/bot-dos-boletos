@@ -9,6 +9,7 @@ gem 'dotenv'
 gem 'rake'
 gem 'activerecord'
 gem 'sqlite3'
+gem 'thor'
 
 
 group :development do

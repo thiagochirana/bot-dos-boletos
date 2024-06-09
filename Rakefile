@@ -1,8 +1,8 @@
-# Rakefile
 require 'active_record'
 require 'yaml'
 require 'rake'
 require 'fileutils'
+require_relative 'lib/generate'
 
 namespace :db do
   desc 'Create the database'
@@ -36,4 +36,10 @@ namespace :db do
     db_config = YAML.load_file('config/database.yml', aliases: true)
     ActiveRecord::Base.establish_connection(db_config['development'])
   end
+end
+
+desc 'Generate files'
+task :generate do
+  ARGV.shift # Remove 'generate' from ARGV
+  Generator.start(ARGV)
 end

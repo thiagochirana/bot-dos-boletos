@@ -186,6 +186,7 @@ DEPENDENCIES
   dotenv
   rake
   sqlite3
+  thor
   web-console
 
 RUBY VERSION
