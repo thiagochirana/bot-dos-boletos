@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 
 [project]
-name = "Bot dos Boletos"
+name = "bot-dos-boletos"
 version = "0.1.0"
 description = "Bot para calcular minhas contas"
 readme = "README.md"
